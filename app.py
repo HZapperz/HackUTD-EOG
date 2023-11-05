@@ -34,7 +34,10 @@ if uploaded_file is not None:
             
             # Display the contents of the output file in a text area
             st.text_area("Leak Detection Results", leak_detections, height=300)
-            
+
+            # Reset file pointer to the beginning
+            file.seek(0)
+
             # Create a download link for the output file
             st.download_button(
                 label="Download Leak Detection Results",
