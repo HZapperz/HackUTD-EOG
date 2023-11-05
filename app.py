@@ -42,7 +42,7 @@ if uploaded_file is not None:
             st.download_button(
                 label="Download Leak Detection Results",
                 data=file,
-                file_name="leak_detection_results.txt",
+                file_name="MethaneLeakAnalysisKTP.txt",
                 mime="text/plain"
             )
     except Exception as e:
